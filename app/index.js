@@ -131,7 +131,9 @@ function createCardElement() {
     $card.append($cardBack, $cardFront);
     $card.classList.add("card");
     $cardBack.classList.add("card_back");
+    $cardBack.setAttribute("style", "-webkit-user-drag: none;");
     $cardFront.classList.add("card_front");
+    $cardFront.setAttribute("style", "-webkit-user-drag: none;");
   }
 }
 
