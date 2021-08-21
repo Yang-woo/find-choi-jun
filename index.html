@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/index.css" rel="stylesheet" />
+    <title>Cafe Boss Choi_Jun</title>
+  </head>
+  <body>
+    <h1>준이를 찾아라~</h1>
+    <header>
+      <div class="buttons">
+        <button class="start_button">시작</button>
+        <button class="restart_button hidden">다시 시작</button>
+      </div>
+      <div class="status">
+        <div class="status_remain hidden"></div>
+        <div class="status_time hidden"></div>
+      </div>
+    </header>
+    <section class="first_game_screen">
+      <img src="./src/img/init_img.jpg" />
+    </section>
+    <section class="on_game_screen hidden"></section>
+    <section class="win_game_screen hidden">
+        <img src="./src/img/img_win.png" />
+    </section>
+    <section class="lose_game_screen hidden">
+        <img src="./src/img/img_lose.png" />
+    </section>
+    </section>
+    <footer></footer>
+    <audio class="bgm-coffee" autoplay src="./src/audio/bgm_coffee.m4a"></audio>
+    <audio class="bgm-correct" autoplay src="./src/audio/bgm_correct.m4a"></audio>
+    <audio class="bgm-wrong" autoplay src="./src/audio/bgm_wrong.m4a"></audio>
+    <audio class="bgm-lose" autoplay src="./src/audio/bgm_lose.m4a"></audio>
+    <audio class="bgm-win" autoplay src="./src/audio/bgm_win.m4a"></audio>
+    <script src="./app/index.js"></script>
+  </body>
+</html>
+<!-- 
+<div class="card">
+  <img class="card_back" />
+  <img class="card_front" />
+</div> -->
