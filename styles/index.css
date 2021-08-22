@@ -34,11 +34,10 @@ h1 {
 }
 
 section {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   border: 1px solid black;
   margin: 0 auto;
-  /* border-radius: 20px; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -46,8 +45,7 @@ section {
 }
 
 .card {
-  width: 148px;
-  height: 148px;
-  /* border: 1px solid black; */
+  width: 98px;
+  height: 98px;
   border-radius: 20px;
 }
