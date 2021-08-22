@@ -47,5 +47,10 @@ section {
 .card {
   width: 98px;
   height: 98px;
-  border-radius: 20px;
+}
+
+.card_size_mediate {
+  width: 98px;
+  height: 98px;
+  object-fit: cover;
 }

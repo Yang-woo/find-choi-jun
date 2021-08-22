@@ -26,7 +26,8 @@ const $bgmLose = document.querySelector(".bgm-lose");
 const $bgmWin = document.querySelector(".bgm-win");
 
 const HIDDEN_CLASSNAME = "hidden";
-const CARD_BACK_IMG = "./src/img/pic_back.png";
+const CARD_BACK_IMG = "./src/img/pic_back.jpg";
+const CARD_SIZE_MEDIATE = "card_size_mediate";
 
 let point = 0;
 let remainJun = imgList.length;
@@ -107,7 +108,6 @@ function assignCard(array) {
   const $cardFront = document.querySelectorAll(".card_front");
   for (let i = 0; i < array.length; i++) {
     $card[i].setAttribute("data-dataindex", array[i].replace(/[^0-9]/g, "")); // 정규식??
-    $card[i].setAttribute("data-cardindex", i);
     $cardBack[i].setAttribute("src", CARD_BACK_IMG);
     $cardFront[i].setAttribute("src", array[i]);
     $cardFront[i].classList.add(HIDDEN_CLASSNAME);
@@ -131,8 +131,10 @@ function createCardElement() {
     $card.append($cardBack, $cardFront);
     $card.classList.add("card");
     $cardBack.classList.add("card_back");
+    $cardBack.classList.add(CARD_SIZE_MEDIATE);
     $cardBack.setAttribute("style", "-webkit-user-drag: none;");
     $cardFront.classList.add("card_front");
+    $cardFront.classList.add(CARD_SIZE_MEDIATE);
     $cardFront.setAttribute("style", "-webkit-user-drag: none;");
   }
 }
