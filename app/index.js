@@ -99,7 +99,7 @@ function handleCardFlip() {
     clicked[1].lastElementChild.classList.toggle(HIDDEN_CLASSNAME);
     clicked = [];
     clickable = true;
-  }, 300);
+  }, 500);
 }
 
 function assignCard(array) {
